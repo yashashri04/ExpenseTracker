@@ -4,16 +4,15 @@ import ExpenseFilter from "./ExpenseFilter";
 import { useState } from 'react/cjs/react.development';
 import { useEffect } from 'react';
 
-const monthsArray=['Jan','Feb','March','April','May','June','July','Aug','Sept','Oct','Nov','Dec'];
 
 const ExpenseList=(props)=>{
-    const [filteredMonth,setFilteredMonth]=useState(new Date().getMonth());
+
+    const [filteredMonth,setFilteredMonth]=useState(0);
 
     const filterChangeHandler=(selected)=>{
         setFilteredMonth(parseInt(selected));
     }
-    
-    console.log(filteredMonth)
+     
     
     const filteredExpense= props.expenseData.filter((expense)=>{
         return expense.month===filteredMonth;
