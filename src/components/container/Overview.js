@@ -48,7 +48,7 @@ const Overview=(props)=>{
     useEffect(()=>{
         props.updatedExpenseList(expenseList);
               
-    },[expenseList])
+    },[expenseList,props])
     
 
     return <>

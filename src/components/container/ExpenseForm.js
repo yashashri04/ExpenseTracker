@@ -11,7 +11,7 @@ const Radio=(props)=>{
 
    useEffect(()=>{
       props.radioBtnValue(checkedValue)
-   },[checkedValue])
+   },[checkedValue,props])
    
     return <div className={classes.radioBtn}>
        <input type="radio" id="expense" name="amountType" value="EXPENSE" onClick={checkedValueHandler} />
@@ -34,7 +34,7 @@ const ExpenseForm=(props)=>{
             setIsValidInput(false);
             return;
         }
-        else if(enteredAmount.trim().length==0 ||  parseInt(enteredAmount)<0){
+        else if(enteredAmount.trim().length===0 ||  parseInt(enteredAmount)<0){
           setIsValidInput(false);
           return;
         }

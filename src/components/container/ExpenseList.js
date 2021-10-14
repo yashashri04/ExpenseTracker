@@ -2,12 +2,13 @@ import classes from './ExpenseList.module.css';
 import ExpenseItem from "./ExpenseItem";
 import ExpenseFilter from "./ExpenseFilter";
 import { useState } from 'react/cjs/react.development';
-import { useEffect } from 'react';
+
 
 
 const ExpenseList=(props)=>{
-
-    const [filteredMonth,setFilteredMonth]=useState(0);
+    
+    const date=new Date().getMonth();
+    const [filteredMonth,setFilteredMonth]=useState(date);
 
     const filterChangeHandler=(selected)=>{
         setFilteredMonth(parseInt(selected));
