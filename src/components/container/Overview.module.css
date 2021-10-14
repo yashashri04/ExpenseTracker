@@ -1,0 +1,38 @@
+.moneyStatus{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+    padding: 5px;
+}
+
+.expenseBox , .incomeBox{
+     border: 1px solid;
+     height: 80px;
+     width: 100%;
+     margin: 5px 10px;
+     /* padding: 10px 15px; */
+     display: flex;
+     flex-direction: column ;
+     
+}
+
+
+.expenseLable ,.incomeLable{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    margin: 15px 15px 2px ;
+}
+
+.expenseAmount ,.incomeAmount{
+    margin:  2px 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.expenseAmount{
+    color: red;
+}
+.incomeAmount{
+    color: green;
+}

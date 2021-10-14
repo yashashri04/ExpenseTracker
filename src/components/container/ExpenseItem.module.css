@@ -1,0 +1,16 @@
+.expenseItem{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(233, 227, 228); 
+    justify-content: space-between;
+    color:rgb(17, 15, 15);
+    margin: 5px 0;
+    padding: 4px 10px;
+}
+.income{
+   border-left:3px solid green;
+  
+}
+.expense{
+    border-left:3px solid red;
+}

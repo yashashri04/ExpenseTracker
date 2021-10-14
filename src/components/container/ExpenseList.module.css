@@ -1,0 +1,32 @@
+.expenseList ul{
+   padding: 0;
+}
+
+.expenseList{
+   max-height: 300px;
+   overflow: auto;
+}
+
+.filter_Reset{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   
+}
+
+.filter_Reset button{
+   padding: 0;
+   height: 1.8rem;
+   width: 3rem;
+   margin-top: 14px;
+   background-color: rgb(20, 15, 16);
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.noExpense{
+   text-align: center;
+   background-color: rgb(233, 227, 228);
+   padding: 3px;
+}

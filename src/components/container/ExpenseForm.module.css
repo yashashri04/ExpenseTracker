@@ -1,0 +1,32 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.form input{
+    padding: 5px;
+    margin: 4px 0;
+}
+
+.radioBtn input{
+    margin: 10px;
+    text-align: center;
+}
+
+.form button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    margin: 1px 3px;
+    font-size: 14px;
+}

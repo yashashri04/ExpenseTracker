@@ -1,0 +1,30 @@
+.mainContainer{
+    height: 300px;
+    width: 360px;
+    border: 2px soild black;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.balanceBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.balance{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn{
+    border: none;
+    background: crimson;
+    color: white;
+    padding: 6px;
+    width: 4rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 2px;
+}
